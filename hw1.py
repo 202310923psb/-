@@ -9,7 +9,7 @@ def get_circle_area(r):
     return area;
 
 
-r = get_radius('넓이를 구하고자 하는 원의 반지름은?')
+r = get_radius('넓이를 구하고자 하는 원의 반지름은? ')
 result = get_circle_area(r)
 print('반지름 {}인 원의 넓이: 3.14 x {} x {} ='.format(r, r, r), result)
 t.sleep(500)
