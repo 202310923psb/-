@@ -17,13 +17,13 @@ def show(dic):
     print()
 
 def find(dic):
-    if not shopping_bag == {}:
+    if not dic == {}:
         print('[검색]')
         find_name = input('장바구니에서 확인하고자 하는 상품은? ')
-        if find_name not in shopping_bag:
+        if find_name not in dic:
             print(f'장바구니에 {find_name}은(는) 없습니다.')
             return None
-        print(f'{find_name}은(는) {shopping_bag[find_name]}개 담겨있습니다.')
+        print(f'{find_name}은(는) {dic[find_name]}개 담겨있습니다.')
     else:
         print('장바구니가 비어있습니다.')
 
