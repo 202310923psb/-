@@ -26,9 +26,9 @@ def show_scores(lst, avg):
     print()
     print(f'평균: {avg}')
 
-path = 'data/score.bin'
-if os.path.exists(path):
-    with open(path, 'rb') as file:
+filepath = 'data/score.bin'
+if os.path.exists(filepath):
+    with open(filepath, 'rb') as file:
         scores = pickle.load(file)
         average = pickle.load(file)
     print('[파일 읽기]')
@@ -37,6 +37,6 @@ else:
     scores = input_scores()
     average = get_average(scores)
     show_scores(scores, average)
-    with open(path, 'wb') as file:
+    with open(filepath, 'wb') as file:
         pickle.dump(scores, file)
         pickle.dump(average, file)
